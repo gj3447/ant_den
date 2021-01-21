@@ -6,3 +6,5 @@
 서버열기 python manage.py runserver
 
 프로젝트만들기 django-admin startproject -name- .
+
+DB마이그레이션 python manage.py makemigrations
