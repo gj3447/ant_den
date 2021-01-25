@@ -3,7 +3,10 @@ from django.shortcuts import render, redirect
 from .forms import UserForm
 
 
+def login(re)
+
 def signup(request):
+    print("hi")
     if request.method == "POST":
         form = UserForm(request.POST)
         if form.is_valid():
@@ -12,7 +15,7 @@ def signup(request):
             raw_password = form.cleaned_data.get('password1')
             user = authenticate(username=username, password=raw_password)
             login(request, user)
-            return redirect('index')
+            return redirect('/id/login')
     else:
         form = UserForm()
     return render(request, 'id/signup.html', {'form': form})
