@@ -22,4 +22,5 @@ urlpatterns = [
     path('',views.index),
     path('admin/', admin.site.urls),
     path('community/',include('community.urls')),
+    path('id/',include('id.urls')),
 ]
