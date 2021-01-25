@@ -3,7 +3,6 @@ from django.shortcuts import render, redirect
 from .forms import UserForm
 
 
-def login(re)
 
 def signup(request):
     print("hi")
